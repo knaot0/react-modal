@@ -9,7 +9,7 @@ export const AlertProvider: React.FC = ({ children }) => {
       <AlertContext.Provider value={{ alert: () => setIsOpen(true) }}>
         <Alert
           isOpen={isOpen}
-          onClose={() => setIsOpen(!isOpen)}
+          onClose={() => setIsOpen(false)}
           description="エラーが発生しました"
         />
         {children}
