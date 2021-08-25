@@ -8,8 +8,8 @@ import { useAlert } from "../components/alert/src/use-alert";
 const ModalPage = () => {
   const alert = useAlert();
 
-  const handleClick: React.MouseEventHandler<HTMLButtonElement> = () => {
-    alert({
+  const handleClick: React.MouseEventHandler<HTMLButtonElement> = async () => {
+    await alert({
       title: 'Error',
       description: 'エラーが発生しました！'
     });
