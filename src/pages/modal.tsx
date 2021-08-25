@@ -9,9 +9,10 @@ const ModalPage = () => {
   const alert = useAlert();
 
   const handleClick: React.MouseEventHandler<HTMLButtonElement> = () => {
-    // alert({
-    //   description: 'hoge'
-    // })
+    alert({
+      title: 'Error',
+      description: 'エラーが発生しました！'
+    });
   }
 
   return (

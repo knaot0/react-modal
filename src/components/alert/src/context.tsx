@@ -1,7 +1,7 @@
 import { createContext, useContext } from "react";
 
 export type AlertContextValue = {
-  alert: () => void;
+  alert: (options: { title: string; description: string }) => void;
 };
 
 export const AlertContext = createContext<AlertContextValue | null>(null);
